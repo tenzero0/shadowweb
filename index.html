@@ -27,9 +27,9 @@
   --c4:#01579b;
   --c5:#b3e5fc;
   --ca:#00e5ff;
-  --cg:#e2eef5;
-  --cm:#8ab5cc;
-  --cd:#2d5470;
+  --cg:#f0f8ff;
+  --cm:#a8cfe0;
+  --cd:#4a7a96;
   --cgold:#ffd54f;
   --ease:cubic-bezier(0.16,1,0.3,1);
   --ease2:cubic-bezier(0.34,1.56,0.64,1);
@@ -97,7 +97,7 @@ body.hov #cur-trail{width:80px;height:80px}
 @keyframes mark-spin-r{to{transform:rotate(-315deg)}}
 .logo-text{background:linear-gradient(135deg,var(--cg) 0%,var(--c1) 60%,var(--ca) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 nav{display:flex;gap:2.5rem;align-items:center}
-nav a{font-family:var(--font-m);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cd);transition:color .3s;position:relative;padding:.2rem 0}
+nav a{font-family:var(--font-m);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cm);transition:color .3s;position:relative;padding:.2rem 0}
 nav a::before{content:attr(data-text);position:absolute;top:0;left:0;color:var(--c1);width:0;overflow:hidden;white-space:nowrap;transition:width .4s var(--ease)}
 nav a:hover{color:transparent}
 nav a:hover::before{width:100%}
@@ -126,7 +126,7 @@ nav a:hover::before{width:100%}
 
 /* ══════════════ HERO ══════════════ */
 #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 5%;position:relative;z-index:3;overflow:hidden}
-.hero-eyebrow{font-family:var(--font-m);font-size:.58rem;letter-spacing:.45em;color:var(--c3);margin-bottom:2.5rem;display:flex;align-items:center;gap:1.2rem;opacity:0}
+.hero-eyebrow{font-family:var(--font-m);font-size:.58rem;letter-spacing:.45em;color:var(--c2);margin-bottom:2.5rem;display:flex;align-items:center;gap:1.2rem;opacity:0}
 .hero-eyebrow::before{content:'';width:36px;height:1px;background:linear-gradient(90deg,transparent,var(--c3));box-shadow:0 0 6px var(--c3)}
 .live-dot{display:inline-flex;align-items:center;gap:.5rem}
 .live-dot::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--ca);box-shadow:0 0 8px var(--ca),0 0 16px rgba(0,229,255,.4);animation:live-pulse 2s ease-in-out infinite}
@@ -143,7 +143,7 @@ nav a:hover::before{width:100%}
 @keyframes glitch-a{0%,85%,100%{transform:translate(0)}86%{transform:translate(-6px,2px)}88%{transform:translate(6px,-2px)}90%{transform:translate(-2px,0)}}
 @keyframes glitch-b{0%,83%,100%{transform:translate(0)}84%{transform:translate(4px,-2px)}86%{transform:translate(-4px,2px)}88%{transform:translate(1px,0)}}
 .hero-body{display:flex;align-items:flex-end;justify-content:space-between;gap:3rem;flex-wrap:wrap}
-.hero-desc{font-size:1rem;font-weight:300;color:var(--cm);max-width:500px;line-height:1.85;opacity:0;letter-spacing:.015em}
+.hero-desc{font-size:1.02rem;font-weight:400;color:var(--cm);max-width:500px;line-height:1.85;opacity:0;letter-spacing:.015em}
 .hero-desc strong{color:var(--cg);font-weight:600}
 .hero-actions{display:flex;gap:1rem;align-items:center;opacity:0;flex-shrink:0}
 .btn-primary{font-family:var(--font-m);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;padding:1rem 2.6rem;background:var(--c1);color:#000;font-weight:500;position:relative;overflow:hidden;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:box-shadow .4s,transform .3s}
@@ -159,7 +159,7 @@ nav a:hover::before{width:100%}
 .scroll-line-wrap{width:50px;height:1px;background:var(--b1);overflow:hidden;position:relative}
 .scroll-line-fill{position:absolute;inset:0;background:linear-gradient(90deg,var(--c4),var(--c1));animation:scroll-line 2s ease-in-out infinite}
 @keyframes scroll-line{0%{transform:translateX(-100%)}50%{transform:translateX(0)}100%{transform:translateX(100%)}}
-.scroll-text{font-family:var(--font-m);font-size:.5rem;letter-spacing:.35em;color:var(--cd);text-transform:uppercase}
+.scroll-text{font-family:var(--font-m);font-size:.5rem;letter-spacing:.35em;color:var(--cm);text-transform:uppercase}
 .hero-stat-block{position:absolute;right:5%;bottom:8rem;display:flex;flex-direction:column;gap:.2rem;opacity:0;z-index:2}
 @media(max-width:1000px){#hero-c{display:none}.hero-stat-block{display:none}}
 .hero-stat-line{display:flex;align-items:center;gap:.8rem}
@@ -176,7 +176,7 @@ nav a:hover::before{width:100%}
 .mq-section::after{right:0;background:linear-gradient(270deg,var(--bg),transparent)}
 .mq-track{display:inline-flex;animation:mq-scroll 35s linear infinite;white-space:nowrap}
 .mq-track:hover{animation-play-state:paused}
-.mq-item{font-family:var(--font-m);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--b3);padding:0 2.5rem;display:flex;align-items:center;gap:2.5rem}
+.mq-item{font-family:var(--font-m);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cd);padding:0 2.5rem;display:flex;align-items:center;gap:2.5rem}
 .mq-item::after{content:'◆';color:var(--c4);font-size:.4rem}
 @keyframes mq-scroll{to{transform:translateX(-50%)}}
 
@@ -185,9 +185,9 @@ section{padding:9rem 5%;position:relative;z-index:3}
 .sec-tag{font-family:var(--font-m);font-size:.52rem;letter-spacing:.38em;text-transform:uppercase;color:var(--c3);display:flex;align-items:center;gap:.8rem;margin-bottom:1.8rem}
 .sec-tag::before{content:'';width:20px;height:1px;background:var(--c3);box-shadow:0 0 6px rgba(79,195,247,.5)}
 .sec-tag::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--b1),transparent);max-width:100px}
-.sh2{font-family:var(--font-d);font-size:clamp(2.5rem,6vw,6rem);font-weight:800;line-height:.88;letter-spacing:.03em;margin-bottom:1.8rem}
+.sh2{font-family:var(--font-d);font-size:clamp(2.5rem,6vw,6rem);font-weight:800;line-height:.88;letter-spacing:.03em;margin-bottom:1.8rem;color:var(--cg)}
 .sh2 em{font-style:normal;background:linear-gradient(135deg,var(--c1),var(--ca));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.sec-body{font-size:.95rem;font-weight:300;color:var(--cm);max-width:480px;line-height:1.85;letter-spacing:.01em}
+.sec-body{font-size:.97rem;font-weight:400;color:var(--cm);max-width:480px;line-height:1.85;letter-spacing:.01em}
 .div-line{height:1px;background:linear-gradient(90deg,transparent,var(--b2) 20%,var(--b2) 80%,transparent);position:relative;z-index:3;margin:0}
 .div-glow{height:1px;background:linear-gradient(90deg,transparent,var(--c3) 30%,var(--c3) 70%,transparent);position:relative;z-index:3;box-shadow:0 0 12px rgba(2,136,209,.4)}
 
@@ -212,9 +212,9 @@ section{padding:9rem 5%;position:relative;z-index:3}
 .svc-ico svg{width:100%;height:100%}
 .svc-ico svg path,.svc-ico svg rect,.svc-ico svg circle,.svc-ico svg polyline,.svc-ico svg line,.svc-ico svg polygon{stroke:var(--b3);stroke-width:1.5;fill:none;stroke-dasharray:200;stroke-dashoffset:200;transition:stroke .4s,stroke-dashoffset .7s var(--ease)}
 .svc-card:hover .svc-ico svg path,.svc-card:hover .svc-ico svg rect,.svc-card:hover .svc-ico svg circle,.svc-card:hover .svc-ico svg polyline,.svc-card:hover .svc-ico svg line,.svc-card:hover .svc-ico svg polygon{stroke:var(--c1);stroke-dashoffset:0}
-.svc-name{font-family:var(--font-d);font-size:1.15rem;font-weight:700;letter-spacing:.06em;color:var(--cg);margin-bottom:.9rem;transition:color .3s}
+.svc-name{font-family:var(--font-d);font-size:1.18rem;font-weight:800;letter-spacing:.06em;color:var(--cg);margin-bottom:.9rem;transition:color .3s}
 .svc-card:hover .svc-name{color:var(--c1)}
-.svc-desc{font-size:.82rem;font-weight:300;color:var(--cd);line-height:1.8;margin-bottom:2rem}
+.svc-desc{font-size:.84rem;font-weight:400;color:var(--cm);line-height:1.8;margin-bottom:2rem}
 .svc-cta{font-family:var(--font-m);font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--b3);display:flex;align-items:center;gap:.6rem;transition:gap .4s,color .3s}
 .svc-cta-arrow{display:inline-block;width:20px;height:1px;background:var(--b3);position:relative;transition:width .4s var(--ease),background .3s}
 .svc-cta-arrow::after{content:'▶';position:absolute;right:-8px;top:-4px;font-size:.4rem;transition:transform .3s}
@@ -266,9 +266,9 @@ section{padding:9rem 5%;position:relative;z-index:3}
 .cf-ico-svg path,.cf-ico-svg circle,.cf-ico-svg rect{stroke:var(--cd);fill:none;stroke-width:1.5;transition:stroke .3s}
 .cf-item:hover .cf-ico-svg path,.cf-item:hover .cf-ico-svg circle,.cf-item:hover .cf-ico-svg rect{stroke:var(--c1)}
 .cf-content{flex:1}
-.cf-title{font-family:var(--font-d);font-size:1rem;font-weight:700;letter-spacing:.06em;color:var(--cg);margin-bottom:.4rem;transition:color .3s}
+.cf-title{font-family:var(--font-d);font-size:1rem;font-weight:800;letter-spacing:.06em;color:var(--cg);margin-bottom:.4rem;transition:color .3s}
 .cf-item:hover .cf-title{color:var(--c1)}
-.cf-desc{font-size:.8rem;font-weight:300;color:var(--cd);line-height:1.7}
+.cf-desc{font-size:.82rem;font-weight:400;color:var(--cm);line-height:1.7}
 .cf-num{font-family:var(--font-m);font-size:.48rem;letter-spacing:.2em;color:var(--b2);margin-left:auto;align-self:center;flex-shrink:0;transition:color .3s}
 .cf-item:hover .cf-num{color:var(--c3)}
 .tech-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2.5rem}
@@ -287,7 +287,7 @@ section{padding:9rem 5%;position:relative;z-index:3}
 .orbit-numbers{display:flex;justify-content:center;gap:4rem;margin-top:2rem;flex-wrap:wrap}
 .on-item{text-align:center}
 .on-val{font-family:var(--font-d);font-size:2.8rem;font-weight:800;background:linear-gradient(135deg,var(--c5),var(--ca));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
-.on-label{font-family:var(--font-m);font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cd);margin-top:.5rem}
+.on-label{font-family:var(--font-m);font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cm);margin-top:.5rem}
 
 /* ══════════════ ABOUT ══════════════ */
 #about{background:var(--s1);display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:center}
@@ -301,7 +301,7 @@ section{padding:9rem 5%;position:relative;z-index:3}
 .vi:hover{border-color:var(--b2);padding-left:2rem}
 .vi-icon{font-size:1.1rem;flex-shrink:0;margin-top:.1rem;filter:grayscale(1);transition:filter .3s}
 .vi:hover .vi-icon{filter:none}
-.vi-text{font-size:.88rem;font-weight:300;color:var(--cm);line-height:1.6}
+.vi-text{font-size:.9rem;font-weight:400;color:var(--cm);line-height:1.6}
 .vi-text strong{color:var(--cg);font-weight:600;display:block;margin-bottom:.2rem;font-family:var(--font-d);font-size:1rem;letter-spacing:.05em}
 .skill-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem}
 .sbadge{font-family:var(--font-m);font-size:.48rem;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .8rem;border:1px solid var(--b2);color:var(--cd);transition:all .35s;cursor:default}
@@ -309,7 +309,7 @@ section{padding:9rem 5%;position:relative;z-index:3}
 .stat-bars{margin-top:2.5rem;display:flex;flex-direction:column;gap:1.2rem}
 .stat-bar-item{display:flex;flex-direction:column;gap:.4rem}
 .stat-bar-label{display:flex;justify-content:space-between;align-items:center}
-.stat-bar-name{font-family:var(--font-m);font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cd)}
+.stat-bar-name{font-family:var(--font-m);font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cm)}
 .stat-bar-val{font-family:var(--font-m);font-size:.55rem;color:var(--c3)}
 .stat-bar-track{height:2px;background:var(--b1);position:relative;overflow:hidden}
 .stat-bar-fill{position:absolute;inset-block:0;left:0;width:0;background:linear-gradient(90deg,var(--c4),var(--c1));box-shadow:0 0 6px var(--c1);transition:width 2s var(--ease)}
@@ -318,27 +318,27 @@ section{padding:9rem 5%;position:relative;z-index:3}
 #team{background:linear-gradient(180deg,var(--s1) 0%,var(--bg) 100%)}
 .team-hdr{text-align:center;margin-bottom:5rem}
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5px;background:var(--b1)}
-@media(max-width:700px){.team-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.team-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.team-grid{grid-template-columns:1fr}}
-.tc{position:relative;background:var(--card);overflow:hidden;aspect-ratio:.85;cursor:none}
+.tc{position:relative;background:var(--card);overflow:hidden;aspect-ratio:.85;cursor:none;transition:transform .4s var(--ease)}.tc:hover{transform:translateY(-3px);z-index:2}
 .tc-pattern{position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(13,31,53,.3) 30px,rgba(13,31,53,.3) 31px);transition:opacity .4s}
 .tc-pattern::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 30px,rgba(13,31,53,.2) 30px,rgba(13,31,53,.2) 31px)}
 .tc-avatar-wrap{position:absolute;top:2.5rem;left:50%;transform:translateX(-50%);width:90px;height:90px}
 .tc-avatar-outer{position:absolute;inset:0;border:1px solid var(--b2);border-radius:50%;animation:avatar-spin 10s linear infinite}
 .tc-avatar-outer::before{content:'';position:absolute;top:-3px;left:50%;width:6px;height:6px;border-radius:50%;background:var(--c1);box-shadow:0 0 8px var(--c1);transform:translateX(-50%)}
 .tc-avatar-mid{position:absolute;inset:8px;border:1px solid transparent;border-top-color:var(--c3);border-radius:50%;animation:avatar-spin 5s linear infinite reverse}
-.tc-avatar-core{position:absolute;inset:18px;border-radius:50%;background:linear-gradient(135deg,var(--s2),var(--card));display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:1.5rem;font-weight:800;color:var(--c3);border:1px solid var(--b2)}
+.tc-avatar-core{position:absolute;inset:18px;border-radius:50%;background:linear-gradient(135deg,rgba(13,31,53,.9),rgba(4,12,26,.95));display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:1.4rem;font-weight:800;color:var(--c1);border:1px solid var(--b3);text-shadow:0 0 12px rgba(79,195,247,.5)}
 @keyframes avatar-spin{to{transform:rotate(360deg)}}
 .tc-base{position:absolute;bottom:0;left:0;right:0;padding:2rem;background:linear-gradient(to top,rgba(2,4,8,.98) 60%,transparent 100%)}
-.tc-name{font-family:var(--font-d);font-size:1.2rem;font-weight:700;letter-spacing:.07em;color:var(--cg)}
+.tc-name{font-family:var(--font-d);font-size:1.2rem;font-weight:800;letter-spacing:.07em;color:var(--cg)}
 .tc-role{font-family:var(--font-m);font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--c3);margin-top:.3rem}
-.tc-overlay{position:absolute;inset:0;background:rgba(2,4,8,.97);display:flex;flex-direction:column;justify-content:center;padding:2.5rem;opacity:0;transform:translateY(6px);transition:opacity .45s var(--ease),transform .45s var(--ease);border-top:1px solid var(--c3)}
+.tc-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(2,6,14,.97),rgba(4,12,26,.98));display:flex;flex-direction:column;justify-content:center;padding:2.2rem 2rem;opacity:0;transform:translateY(6px);transition:opacity .45s var(--ease),transform .45s var(--ease);border-top:2px solid var(--c3);box-shadow:inset 0 0 40px rgba(0,229,255,.04)}
 .tc:hover .tc-overlay{opacity:1;transform:translateY(0)}
 .tc-overlay .tc-name{font-size:1.3rem;color:var(--c1);margin-bottom:.3rem}
 .tc-overlay .tc-role{color:var(--c3);margin-bottom:1.2rem}
-.tc-bio-text{font-size:.8rem;font-weight:300;color:var(--cm);line-height:1.75;margin-bottom:1.5rem}
+.tc-bio-text{font-size:.82rem;font-weight:400;color:var(--cm);line-height:1.75;margin-bottom:1.5rem}
 .tc-skills{display:flex;flex-wrap:wrap;gap:.35rem}
-.tc-skill{font-family:var(--font-m);font-size:.47rem;letter-spacing:.1em;padding:.22rem .55rem;border:1px solid var(--b2);color:var(--b3)}
+.tc-skill{font-family:var(--font-m);font-size:.47rem;letter-spacing:.1em;padding:.22rem .55rem;border:1px solid var(--b3);color:var(--cm);transition:all .3s}.tc-skill:hover{border-color:var(--c1);color:var(--c1)}
 .team-note{margin-top:3rem;text-align:center;font-family:var(--font-m);font-size:.58rem;letter-spacing:.15em;color:var(--cd);padding:1.2rem 2rem;border:1px solid var(--b1);background:rgba(7,11,20,.5);max-width:500px;margin:3rem auto 0}
 .team-note a{color:var(--c1);text-decoration-color:rgba(79,195,247,.3);text-underline-offset:3px}
 
@@ -356,9 +356,9 @@ section{padding:9rem 5%;position:relative;z-index:3}
 .exp-ico-svg{width:100%;height:100%}
 .exp-ico-svg path,.exp-ico-svg circle,.exp-ico-svg rect,.exp-ico-svg polyline,.exp-ico-svg line{stroke:var(--b3);fill:none;stroke-width:1.5;stroke-dasharray:150;stroke-dashoffset:150;transition:stroke .4s,stroke-dashoffset .6s var(--ease)}
 .exp-card:hover .exp-ico-svg path,.exp-card:hover .exp-ico-svg circle,.exp-card:hover .exp-ico-svg rect,.exp-card:hover .exp-ico-svg polyline,.exp-card:hover .exp-ico-svg line{stroke:var(--c1);stroke-dashoffset:0}
-.exp-title{font-family:var(--font-d);font-size:1rem;font-weight:700;letter-spacing:.07em;color:var(--cg);margin-bottom:.7rem;transition:color .3s}
+.exp-title{font-family:var(--font-d);font-size:1rem;font-weight:800;letter-spacing:.07em;color:var(--cg);margin-bottom:.7rem;transition:color .3s}
 .exp-card:hover .exp-title{color:var(--c1)}
-.exp-desc{font-size:.82rem;font-weight:300;color:var(--cd);line-height:1.75}
+.exp-desc{font-size:.84rem;font-weight:400;color:var(--cm);line-height:1.75}
 
 /* ══════════════ CONTACT ══════════════ */
 #contact{background:var(--s1)}
@@ -391,9 +391,9 @@ section{padding:9rem 5%;position:relative;z-index:3}
 .soc-card.ig:hover .soc-platform{color:#e1306c}
 .soc-card.tg:hover .soc-platform{color:#29b6f6}
 .soc-card.wa:hover .soc-platform{color:#25d366}
-.soc-handle{font-family:var(--font-m);font-size:.72rem;color:var(--cd);transition:color .3s}
+.soc-handle{font-family:var(--font-m);font-size:.72rem;color:var(--cm);transition:color .3s}
 .soc-card:hover .soc-handle{color:var(--cm)}
-.soc-desc{font-size:.78rem;font-weight:300;color:var(--cd);line-height:1.7}
+.soc-desc{font-size:.8rem;font-weight:400;color:var(--cm);line-height:1.7}
 .soc-action{font-family:var(--font-m);font-size:.52rem;letter-spacing:.18em;text-transform:uppercase;
   display:flex;align-items:center;gap:.6rem;color:var(--b3);margin-top:.4rem;transition:gap .4s,color .3s}
 .soc-action-line{display:inline-block;width:18px;height:1px;background:var(--b3);transition:width .4s var(--ease),background .3s}
@@ -425,7 +425,7 @@ section{padding:9rem 5%;position:relative;z-index:3}
   background:linear-gradient(to bottom,transparent,var(--c1),transparent)}
 .cta-block-label{font-family:var(--font-m);font-size:.5rem;letter-spacing:.3em;text-transform:uppercase;
   color:var(--c3);margin-bottom:.8rem}
-.cta-block-text{font-size:.88rem;font-weight:300;color:var(--cm);line-height:1.75}
+.cta-block-text{font-size:.88rem;font-weight:400;color:var(--cm);line-height:1.75}
 .cta-block-text strong{color:var(--cg);font-weight:600}
 
 /* ══════════════ FOOTER ══════════════ */
@@ -434,10 +434,10 @@ footer{background:var(--bg);border-top:1px solid var(--b1);padding:5rem 5% 2.5re
 @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;gap:2.5rem}}
 @media(max-width:560px){.footer-grid{grid-template-columns:1fr}}
 .f-logo{font-family:var(--font-d);font-size:1.5rem;font-weight:800;letter-spacing:.2em;margin-bottom:1rem;background:linear-gradient(135deg,var(--cg),var(--c1));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.f-desc{font-size:.82rem;font-weight:300;color:var(--cd);line-height:1.85;max-width:260px}
+.f-desc{font-size:.82rem;font-weight:400;color:var(--cm);line-height:1.85;max-width:260px}
 .f-head{font-family:var(--font-m);font-size:.5rem;letter-spacing:.3em;text-transform:uppercase;color:var(--c3);margin-bottom:1.5rem}
 .f-links{list-style:none;display:flex;flex-direction:column;gap:.65rem}
-.f-links a{font-size:.82rem;font-weight:300;color:var(--cd);transition:color .3s,padding .3s;display:block;padding-left:0}
+.f-links a{font-size:.82rem;font-weight:400;color:var(--cm);transition:color .3s,padding .3s;display:block;padding-left:0}
 .f-links a:hover{color:var(--c1);padding-left:.5rem}
 .footer-bottom{border-top:1px solid var(--b1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .f-copy{font-family:var(--font-m);font-size:.5rem;letter-spacing:.12em;color:var(--cd)}
@@ -486,7 +486,7 @@ footer{background:var(--bg);border-top:1px solid var(--b1);padding:5rem 5% 2.5re
 .ts-card.next:hover .ts-card-name{color:#ffffff}
 .ts-card.ts:hover .ts-card-name{color:#3178c6}
 .ts-card-ver{font-family:var(--font-m);font-size:.48rem;letter-spacing:.2em;padding:.2rem .6rem;border:1px solid var(--b2);color:var(--b3);display:inline-block;margin-bottom:1.2rem}
-.ts-card-desc{font-size:.82rem;font-weight:300;color:var(--cd);line-height:1.8;margin-bottom:1.8rem}
+.ts-card-desc{font-size:.84rem;font-weight:400;color:var(--cm);line-height:1.8;margin-bottom:1.8rem}
 /* Animated code snippet inside each card */
 .ts-code{background:rgba(2,4,8,.7);border:1px solid var(--b1);padding:1rem 1.2rem;font-family:var(--font-m);font-size:.58rem;line-height:1.9;border-left:2px solid var(--b2);overflow:hidden;transition:border-color .4s}
 .ts-card.react:hover .ts-code{border-left-color:#61dafb}
@@ -507,6 +507,14 @@ footer{background:var(--bg);border-top:1px solid var(--b1);padding:5rem 5% 2.5re
   background:linear-gradient(135deg,var(--c1),var(--ca));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
+
+/* ══ ENHANCED TEAM OVERLAY ══ */
+.tc-role-tag{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--font-m);font-size:.43rem;letter-spacing:.18em;text-transform:uppercase;padding:.25rem .7rem;border:1px solid rgba(79,195,247,.25);color:var(--c1);background:rgba(79,195,247,.06);margin-bottom:.9rem;width:fit-content}
+.tc-role-tag::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--ca);box-shadow:0 0 5px var(--ca);animation:live-pulse 2s ease-in-out infinite;flex-shrink:0}
+.tc-lang-bar{display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.8rem}
+.tc-lang{font-family:var(--font-m);font-size:.43rem;letter-spacing:.09em;padding:.2rem .52rem;background:rgba(13,31,53,.7);border-left:2px solid var(--b3);color:var(--cm);transition:all .3s;white-space:nowrap}
+.tc-lang.primary{border-left-color:var(--ca);color:var(--c1);background:rgba(0,229,255,.07)}
+.tc-overlay-footer{margin-top:.8rem;padding-top:.7rem;border-top:1px solid rgba(13,31,53,.7);font-family:var(--font-m);font-size:.42rem;letter-spacing:.15em;color:var(--cd);text-transform:uppercase}
 </style>
 </head>
 <body>
@@ -897,13 +905,140 @@ footer{background:var(--bg);border-top:1px solid var(--b1);padding:5rem 5% 2.5re
     <h2 class="sh2" id="team-h2">MEET THE <em>TEAM</em></h2>
   </div>
   <div class="team-grid">
-    <div class="tc"><div class="tc-pattern" aria-hidden="true"></div><div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">SU</div></div><div class="tc-base"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div></div><div class="tc-overlay"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div><p class="tc-bio-text">................</p><div class="tc-skills"><span class="tc-skill">Python</span><span class="tc-skill">Node.js</span><span class="tc-skill">React</span><span class="tc-skill">Databases</span></div></div></div>
-    <div class="tc"><div class="tc-pattern" aria-hidden="true"></div><div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">SU</div></div><div class="tc-base"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div></div><div class="tc-overlay"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div><p class="tc-bio-text">................</p><div class="tc-skills"><span class="tc-skill">Python</span><span class="tc-skill">Node.js</span><span class="tc-skill">React</span><span class="tc-skill">Databases</span></div></div></div>
-    <div class="tc"><div class="tc-pattern" aria-hidden="true"></div><div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">SU</div></div><div class="tc-base"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div></div><div class="tc-overlay"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div><p class="tc-bio-text">................</p><div class="tc-skills"><span class="tc-skill">Python</span><span class="tc-skill">Node.js</span><span class="tc-skill">React</span><span class="tc-skill">Databases</span></div></div></div>
-    <div class="tc"><div class="tc-pattern" aria-hidden="true"></div><div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">SU</div></div><div class="tc-base"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div></div><div class="tc-overlay"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div><p class="tc-bio-text">................</p><div class="tc-skills"><span class="tc-skill">Python</span><span class="tc-skill">Node.js</span><span class="tc-skill">React</span><span class="tc-skill">Databases</span></div></div></div>
-    <div class="tc"><div class="tc-pattern" aria-hidden="true"></div><div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">SU</div></div><div class="tc-base"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div></div><div class="tc-overlay"><div class="tc-name">SUYOG</div><div class="tc-role">Lead Developer</div><p class="tc-bio-text">................</p><div class="tc-skills"><span class="tc-skill">Python</span><span class="tc-skill">Node.js</span><span class="tc-skill">React</span><span class="tc-skill">Databases</span></div></div></div>
+
+    <!-- TENZERO -->
+    <div class="tc">
+      <div class="tc-pattern" aria-hidden="true"></div>
+      <div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">TZ</div></div>
+      <div class="tc-base"><div class="tc-name">TENZERO</div><div class="tc-role">Founder &amp; Team Manager</div></div>
+      <div class="tc-overlay">
+        <div class="tc-name">TENZERO</div>
+        <div class="tc-role-tag">Founder · Director</div>
+        <p class="tc-bio-text">The architect of Shadow Corp. Built this collective from zero — every hire, every standard, every decision. Full-stack developer and game engine specialist who knows exactly what quality looks like and won't ship without it.</p>
+        <div class="tc-lang-bar">
+          <span class="tc-lang primary">Python</span>
+          <span class="tc-lang primary">C++</span>
+          <span class="tc-lang primary">C#</span>
+          <span class="tc-lang">Node.js</span>
+          <span class="tc-lang">Unreal Engine</span>
+          <span class="tc-lang">Unity</span>
+          <span class="tc-lang">SQL</span>
+          <span class="tc-lang">After Effects</span>
+        </div>
+        <div class="tc-overlay-footer">Fullstack · Game Dev · VFX · Leadership</div>
+      </div>
+    </div>
+
+    <!-- FATNEEK -->
+    <div class="tc">
+      <div class="tc-pattern" aria-hidden="true"></div>
+      <div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">FN</div></div>
+      <div class="tc-base"><div class="tc-name">FATNEEK</div><div class="tc-role">Lead Developer</div></div>
+      <div class="tc-overlay">
+        <div class="tc-name">FATNEEK</div>
+        <div class="tc-role-tag">Lead Dev · MERN Stack</div>
+        <p class="tc-bio-text">Shadow Corp's senior engineer. Handles the heaviest builds — full-stack web apps, complex API systems, and database architecture. When precision and reliability are non-negotiable, Fatneek writes it.</p>
+        <div class="tc-lang-bar">
+          <span class="tc-lang primary">JavaScript</span>
+          <span class="tc-lang primary">React</span>
+          <span class="tc-lang primary">Node.js</span>
+          <span class="tc-lang">Python</span>
+          <span class="tc-lang">MongoDB</span>
+          <span class="tc-lang">Express.js</span>
+          <span class="tc-lang">PostgreSQL</span>
+        </div>
+        <div class="tc-overlay-footer">MERN Stack · REST APIs · Databases</div>
+      </div>
+    </div>
+
+    <!-- FITFIX -->
+    <div class="tc">
+      <div class="tc-pattern" aria-hidden="true"></div>
+      <div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">FF</div></div>
+      <div class="tc-base"><div class="tc-name">FITFIX</div><div class="tc-role">Community Manager</div></div>
+      <div class="tc-overlay">
+        <div class="tc-name">FITFIX</div>
+        <div class="tc-role-tag">Community · Growth Ops</div>
+        <p class="tc-bio-text">The voice of Shadow Corp. Manages client relationships, Discord server architecture, and community growth strategy. Keeps engagement high, conflicts low, and doubles as a capable backend dev when the team needs coverage.</p>
+        <div class="tc-lang-bar">
+          <span class="tc-lang primary">Node.js</span>
+          <span class="tc-lang primary">C#</span>
+          <span class="tc-lang">JavaScript</span>
+          <span class="tc-lang">Discord.js</span>
+          <span class="tc-lang">Premiere Pro</span>
+          <span class="tc-lang">Photoshop</span>
+        </div>
+        <div class="tc-overlay-footer">Bot Dev · Community Ops · VFX</div>
+      </div>
+    </div>
+
+    <!-- BUKUg -->
+    <div class="tc">
+      <div class="tc-pattern" aria-hidden="true"></div>
+      <div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">BK</div></div>
+      <div class="tc-base"><div class="tc-name">BUKUg</div><div class="tc-role">QA &amp; Bug Hunter</div></div>
+      <div class="tc-overlay">
+        <div class="tc-name">BUKUg</div>
+        <div class="tc-role-tag">QA · Pentesting</div>
+        <p class="tc-bio-text">Nothing ships until BUKUg breaks it first. Our dedicated QA engineer and security analyst finds edge cases, logic flaws, and vulnerabilities before clients ever see them. His sign-off is the final gate before delivery.</p>
+        <div class="tc-lang-bar">
+          <span class="tc-lang primary">Python</span>
+          <span class="tc-lang primary">Bash</span>
+          <span class="tc-lang">Node.js</span>
+          <span class="tc-lang">Burp Suite</span>
+          <span class="tc-lang">Wireshark</span>
+          <span class="tc-lang">Kali Linux</span>
+          <span class="tc-lang">React</span>
+        </div>
+        <div class="tc-overlay-footer">Security · QA Testing · Automation</div>
+      </div>
+    </div>
+
+    <!-- KBN -->
+    <div class="tc">
+      <div class="tc-pattern" aria-hidden="true"></div>
+      <div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">KB</div></div>
+      <div class="tc-base"><div class="tc-name">KBN</div><div class="tc-role">DevOps &amp; Support Dev</div></div>
+      <div class="tc-overlay">
+        <div class="tc-name">KBN</div>
+        <div class="tc-role-tag">DevOps · Infrastructure</div>
+        <p class="tc-bio-text">KBN keeps everything running. Handles deployment pipelines, server uptime, and support-level development — the backbone that makes our 24/7 promise possible. Fast learner, consistent shipper, always improving his stack.</p>
+        <div class="tc-lang-bar">
+          <span class="tc-lang primary">Python</span>
+          <span class="tc-lang primary">Node.js</span>
+          <span class="tc-lang">React</span>
+          <span class="tc-lang">Docker</span>
+          <span class="tc-lang">Linux</span>
+          <span class="tc-lang">MongoDB</span>
+          <span class="tc-lang">Git</span>
+        </div>
+        <div class="tc-overlay-footer">Infrastructure · CI/CD · Support Dev</div>
+      </div>
+    </div>
+
+    <!-- SC -->
+    <div class="tc">
+      <div class="tc-pattern" aria-hidden="true"></div>
+      <div class="tc-avatar-wrap" aria-hidden="true"><div class="tc-avatar-outer"></div><div class="tc-avatar-mid"></div><div class="tc-avatar-core">SC</div></div>
+      <div class="tc-base"><div class="tc-name">SC</div><div class="tc-role">Support Developer</div></div>
+      <div class="tc-overlay">
+        <div class="tc-name">SC</div>
+        <div class="tc-role-tag">Support · Bot Maintenance</div>
+        <p class="tc-bio-text">SC handles the work that happens after handoff — patches, updates, bot maintenance, and feature extensions. Reliable and always available when a client needs something fixed, added, or upgraded post-launch.</p>
+        <div class="tc-lang-bar">
+          <span class="tc-lang primary">Python</span>
+          <span class="tc-lang primary">Discord.py</span>
+          <span class="tc-lang">Node.js</span>
+          <span class="tc-lang">React</span>
+          <span class="tc-lang">MongoDB</span>
+          <span class="tc-lang">REST APIs</span>
+        </div>
+        <div class="tc-overlay-footer">Bot Dev · Maintenance · Patches</div>
+      </div>
+    </div>
+
   </div>
-  <p class="team-note">We're a focused team — every project gets our full attention. <a href="#contact">Work with us.</a></p>
+    <p class="team-note">We're a focused team — every project gets our full attention. <a href="#contact">Work with us.</a></p>
 </section>
 
 <div class="div-line"></div>
